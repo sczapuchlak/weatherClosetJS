@@ -12,8 +12,8 @@ var index = require('./routes/index');
 var app = express();
 
 //connects the Mongoose
-var url = 'mongodb://localhost:27017/weatherCloset';
-mongoose.connect(url);
+//var url = 'mongodb://localhost:27017/weatherCloset';
+//mongoose.connect(url);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
