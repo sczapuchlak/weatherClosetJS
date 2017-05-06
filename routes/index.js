@@ -15,9 +15,9 @@ router.get('/', function(req, res) {
 });
 
 
-//transfer to personal page from submit button
+//get personal page
 router.get('/personalpage', function (req,res) {
-    res.send('personalpage')
+    res.render('personalpage',{title: 'Personal Page'})
 });
 
 
