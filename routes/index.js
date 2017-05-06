@@ -17,8 +17,12 @@ router.get('/', function(req, res) {
 
 //get personal page
 router.get('/personalpage', function (req,res) {
-    res.render('personalpage',{title: 'Personal Page'})
+    res.render('personalpage',{title: 'Personal Page',
+    username: req.query.name});
+    console.log(req.query)
 });
+
+//
 
 
 /*TODO - add button for them to be able to add a favorite outfits and a button
