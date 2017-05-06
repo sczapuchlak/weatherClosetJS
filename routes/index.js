@@ -5,21 +5,19 @@ var Outfit = require('../models/outfits.js');
 // hello??
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-    Outfit.find({complete_outfit: true}, function (err,tasks) {
+router.get('/', function(req, res) {
+   /* Outfit.find({complete_outfit: true}, function (err,tasks) {
         if (err){
             return next(err);
         }
-    })
-/*    var dollars= "this is what i said";
-    res.send(dollars);*/
+    })*/
     res.render('index', { title: 'Weather Closet', outfits:Outfit });
 });
 
 
-//transfer to personal page
-router.get('/personalpage', function (req,res, next) {
-    res.render('personalpage')
+//transfer to personal page from submit button
+router.get('/personalpage', function (req,res) {
+    res.send('personalpage')
 });
 
 
