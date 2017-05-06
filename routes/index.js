@@ -10,12 +10,17 @@ router.get('/', function(req, res, next) {
         if (err){
             return next(err);
         }
-    });
+    })
+/*    var dollars= "this is what i said";
+    res.send(dollars);*/
     res.render('index', { title: 'Weather Closet', outfits:Outfit });
 });
 
 
-
+//transfer to personal page
+router.get('/personalpage', function (req,res, next) {
+    res.render('personalpage')
+});
 
 
 /*TODO - add button for them to be able to add a favorite outfits and a button
