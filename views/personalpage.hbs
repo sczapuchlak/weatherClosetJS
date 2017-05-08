@@ -2,3 +2,26 @@
 <h2 class="welcomeBack">
     Welcome Back, {{username}}!
 </h2>
+<p class="ready">
+Ready for your weather match?
+</br>
+    Down below you will see you can pick from many style options!
+    Whether you are heading out for a quick job or to that boughie
+    gala event which requires heels and a dress, Weather Closet has you
+    covered. Don't spend time worrying about you should be wearing, and
+    spend that time having the time of your life!
+</p>
+<h2>
+    Please enter a city followed by the state abbreviation or Country if it is an international
+    city (outside of the US).
+</h2>
+<form action="/dailyweather" method="get">
+
+    <input type="text" name="cityAndState" placeholder="Ex. Berlin,Germany" maxlength="100"><br>
+    Event You Are Attending: (Please select one)<br>
+    <input type="radio" name="articleOfClothing" value="Business"> Business<br>
+    <input type="radio" name="articleOfClothing" value="Casual" checked="checked"> Casual<br>
+    <input type="radio" name="articleOfClothing" value="Sporty"> Sporty<br>
+    <input type="radio" name="articleOfClothing" value="Event"> Event<br>
+    <input type="submit" value="Submit">
+</form>

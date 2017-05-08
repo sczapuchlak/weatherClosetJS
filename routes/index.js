@@ -24,7 +24,14 @@ router.get('/personalpage', function (req,res) {
 
 //
 
+//get daily weather page
+router.get('/dailyweather', function (req,res) {
+    res.render('dailyweather',{title:'Your daily weather style!',
+    radioPicked:req.query.articleOfClothing,
+    cityPicked:req.query.cityAndState});
+    console.log(req.query);
 
+});
 /*TODO - add button for them to be able to add a favorite outfits and a button
  to delete that favorite just in case they change their mind later on down the road
  */
